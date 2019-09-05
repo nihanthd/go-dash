@@ -5,6 +5,7 @@ import (
 	"encoding/hex"
 	"encoding/xml"
 	"errors"
+	"fmt"
 	"strings"
 	"time"
 
@@ -236,7 +237,7 @@ func (as *AdaptationSet) UnmarshalXML(d *xml.Decoder, start xml.StartElement) er
 				}
 				representations = append(representations, rp)
 			default:
-				return errors.New("Unrecognized element in AdaptationSet")
+				return errors.New(fmt.Sprintf("Unrecognized element in AdaptationSet: %s", tt.Name.Local))
 			}
 		case xml.EndElement:
 			if tt == start.End() {
