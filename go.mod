@@ -1,3 +1,3 @@
-module github.com/zencoder/go-dash
+module github.com/nihanthd/go-dash
 
 go 1.12
