@@ -3,9 +3,9 @@ package mpd
 import (
 	"testing"
 
-	"github.com/zencoder/go-dash/helpers/ptrs"
-	"github.com/zencoder/go-dash/helpers/require"
-	"github.com/zencoder/go-dash/helpers/testfixtures"
+	"github.com/nihanthd/go-dash/helpers/ptrs"
+	"github.com/nihanthd/go-dash/helpers/require"
+	"github.com/nihanthd/go-dash/helpers/testfixtures"
 )
 
 func TestSegmentListSerialization(t *testing.T) {
