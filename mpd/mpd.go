@@ -236,6 +236,8 @@ func (as *AdaptationSet) UnmarshalXML(d *xml.Decoder, start xml.StartElement) er
 					return err
 				}
 				representations = append(representations, rp)
+			case "Accessibility":
+				//for now we do nothing
 			default:
 				return errors.New(fmt.Sprintf("Unrecognized element in AdaptationSet: %s", tt.Name.Local))
 			}
